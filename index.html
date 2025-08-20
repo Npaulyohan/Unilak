@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <a href="">Home</a>
-        <a href="">Products</a> 
-        <a href="">About</a> 
-        <a href="">Account</a> 
-        <a href="">Login</a>
-    </nav>
-    <h1 class="one">Hello this is my Web</h1>
-    <p> List of my fav Football teams</p>
-    <ol>
-        <li>MAN_UTD</li>
-        <li>RMADRID</li>
-        <li>PSG</li>
-        <li>FCB</li>
+    <!-- Adding tables content-->
+    <h1> List of students </h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Student_Id</th>
+                <th>Student_Name</th>
+                <th>Student_Age</th>
+                <th>Student_Marks</th>
+                <th>Student_Gender</th>
+            </tr>
+        </thead>
+        <tBody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>20</td>
+                <td>85</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John Smith</td>
+                <td>20</td>
+                <td>85</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td rowspan="2">3</td>
+                <td>Larson Doe</td>
+                <td colspan="2">20</td>
+                <td>Female</td>
+            </tr>
+            <tr>
 
-    </ol>
-    <button class="two">Add me</button>
-    <div class="image-container">
-        <img src="./image1.jpeg" alt="" />
-        <img src="./image2.jpg" alt="" />
-       
+                <td>Mario Doe</td>
+                <td>20</td>
+                <td>85</td>
+                <td>Female</td>
+            </tr>
+        </tBody>
+    </table>
 
+    <form class="form">
+        <label for=""> Enter Your Name</label>
+        <input type="text" placeholder=" Enter Your Name" required>
+        <label for=""> Enter your email</label>
+        <input type="text" placeholder=" Enter Your email" required>
+        <label for=""> Enter your password</label>
+        <input type="text" placeholder=" Enter Your password" required>
+        <label for=""> select your country </label>
+            <select name=" select your country" id="">
+        <option value="India">India</option>
+        <option value="Canada">Canada</option>
+        <option value="Gabon">Gabon</option>
+    </select>
+    <textarea rows="20" cols="10" placeholder="Enter your comments"></textarea>
+    <div>    
+        <input type="radio" name="gender" id="Male" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Female" value="Female">
+        <label for="Female">Female</label>
     </div>
+   
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+    </form>
 
-    
 
-    <a href="https://www.youtube.com/">Go to Youtube</a>
-
-    <footer>
-        <strong>Copyright @Natcom. Create by Obed. </strong>
-    </footer>
 </body>
+
 </html>
